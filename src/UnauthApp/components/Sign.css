@@ -1,0 +1,34 @@
+.log-in-form {
+  width: 50rem;
+  height: 60%;
+  padding: 5.5rem;
+  background-color: #fee0a4;
+  border-radius: 1rem;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.log-in-form .form-input {
+  width: 80%;
+  padding: 2rem 0 2rem 1rem;
+  background-color: transparent;
+  border: none;
+  border-bottom: 0.2rem solid #c211a0;
+  border-radius: 1rem 1rem 0 0;
+  margin-bottom: 2.4rem;
+  color: #fff;
+  font-size: 2rem;
+  outline: none;
+}
+
+.log-in-form .form-check-box {
+  margin: 2rem 0;
+  font-size: 1.6rem;
+}
+
+.log-in-form .link-log-in {
+  display: block;
+  margin-top: 14rem;
+  color: #c211a0;
+  font-size: 1.6rem;
+}

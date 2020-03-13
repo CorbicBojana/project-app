@@ -12,7 +12,7 @@ import { Login } from "../../services/http";
 
 import { useAuthContext } from "../../auth-context";
 
-function SingUp() {
+function SignUp() {
   const [singUpInput, setSingUpInput] = React.useState({
     name: "",
     email: "",
@@ -84,8 +84,8 @@ function SingUp() {
           <button type="submit" className="button">
             Sign Up
           </button>
-          <Link to="/Sing-in" className="router-link">
-            <span className="link-log-in">You have account? Sing In</span>
+          <Link to="/Sign-in" className="router-link">
+            <span className="link-log-in">You have account? Sign In</span>
           </Link>
         </form>
       </div>
@@ -93,4 +93,4 @@ function SingUp() {
   );
 }
 
-export default SingUp;
+export default SignUp;

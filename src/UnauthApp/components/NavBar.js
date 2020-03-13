@@ -19,13 +19,13 @@ function NavBar() {
       </ul>
       <ul className="nav-bar-list">
         <li className="nav-bar-list-item active">
-          <NavLink to="/Sing-in" className="nav-bar-link router-link">
-            Sing in
+          <NavLink to="/Sign-in" className="nav-bar-link router-link">
+            Sign in
           </NavLink>
         </li>
         <li className="nav-bar-list-item">
-          <NavLink to="/Sing-up" className="nav-bar-link router-link">
-            Sing up
+          <NavLink to="/Sign-up" className="nav-bar-link router-link">
+            Sign up
           </NavLink>
         </li>
       </ul>

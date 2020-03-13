@@ -4,8 +4,8 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import NavBar from "./components/NavBar";
 import Intro from "./components/Intro";
-import SingIn from "./components/SingIn";
-import SingUp from "./components/SingUp";
+import SignIn from "./components/SignIn";
+import SignUp from "./components/SignUp";
 
 function UnauthApp() {
   return (
@@ -22,8 +22,8 @@ function UnauthApp() {
               </>
             )}
           />
-          <Route path="/Sing-in" component={SingIn} />
-          <Route path="/Sing-up" component={SingUp} />
+          <Route path="/Sign-in" component={SignIn} />
+          <Route path="/Sign-up" component={SignUp} />
         </Switch>
       </BrowserRouter>
     </div>

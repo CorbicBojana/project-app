@@ -11,8 +11,10 @@ import { Login } from "../../services/http";
 
 import { useAuthContext } from "../../auth-context";
 
-function SingIn() {
-  const [singInInput, setSingInInput] = React.useState({
+import "./Sign.css";
+
+function SignIn() {
+  const [signInInput, setSignInInput] = React.useState({
     email: "",
     password: ""
   });
@@ -20,8 +22,8 @@ function SingIn() {
   const { authenticate } = useAuthContext();
 
   const handleChange = e => {
-    setSingInInput({
-      ...singInInput,
+    setSignInInput({
+      ...signInInput,
       [e.target.name]: e.target.value
     });
   };
@@ -29,12 +31,12 @@ function SingIn() {
   const handleSubmit = async e => {
     e.preventDefault();
 
-    const singInResponse = await Login.submit({
-      email: singInInput.email,
-      password: singInInput.password
+    const signInResponse = await Login.submit({
+      email: signInInput.email,
+      password: signInInput.password
     });
 
-    localStorage.setItem("token", singInResponse.data.token);
+    localStorage.setItem("token", signInResponse.data.token);
 
     authenticate();
   };
@@ -43,7 +45,7 @@ function SingIn() {
     <>
       <NavBar />
       <div className="log-in-form">
-        <h1 className="intro-text">Sing In</h1>
+        <h1 className="intro-text">Sign In</h1>
         <form className="form" onSubmit={handleSubmit}>
           <div className="form-email">
             <img src={Mail} alt="user-icon" />
@@ -53,7 +55,7 @@ function SingIn() {
               placeholder="Email"
               onChange={handleChange}
               name="email"
-              value={singInInput.email}
+              value={signInInput.email}
             />
           </div>
           <div className="form-password">
@@ -64,7 +66,7 @@ function SingIn() {
               placeholder="Password"
               onChange={handleChange}
               name="password"
-              value={singInInput.password}
+              value={signInInput.password}
             />
           </div>
           <div className="form-check-box">
@@ -72,7 +74,7 @@ function SingIn() {
             <label>Remember me</label>
           </div>
           <button type="submit" className="button">
-            Sing In
+            Sign In
           </button>
         </form>
         <Link to="/" className="router-link">
@@ -83,4 +85,4 @@ function SingIn() {
   );
 }
 
-export default SingIn;
+export default SignIn;
