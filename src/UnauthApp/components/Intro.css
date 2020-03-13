@@ -1,0 +1,19 @@
+.intro {
+  width: 40%;
+}
+
+.intro p {
+  color: #fff;
+  font-size: 2rem;
+  line-height: 1.6;
+}
+
+.image-holder {
+  position: absolute;
+  top: 30%;
+  right: 0;
+}
+
+.image-holder img {
+  height: 66rem;
+}
