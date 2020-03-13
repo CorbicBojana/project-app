@@ -9,8 +9,8 @@ function AuthApp() {
   return (
     <div className="container">
       <BrowserRouter>
+        <NavBar />
         <Switch>
-          <NavBar />
           <Route path="/Categories" component={Categories} />
           <Route render={() => <Redirect to="/" />} />
         </Switch>

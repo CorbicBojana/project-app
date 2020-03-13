@@ -6,5 +6,6 @@ export const Login = {
 };
 
 export const Categories = {
-  getAll: () => axios.get("/categories/get-all")
+  getAll: () => axios.get("/categories/get-all"),
+  delete: ({ id }) => axios.delete(`/categories/${id}`)
 };
